@@ -23,13 +23,28 @@ body {
   line-height: 23px;
   text-align: center;
   color: #2F4F4F;
+  justify-content: center;
+  position: relative;
 }
 img {
-  display: flex;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  transition: 1s;
 }
+
+.rank {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  color: #8B0000;
+  font-size: 16px;
+  line-height: 18px;
+ }
 
 .sport {
   opacity: 0;
@@ -41,4 +56,24 @@ img {
 
 
 
+.person:hover {
+  background-color: #EEEEEE;
+  border-radius: 12px;
+  width: 264px;
+  height: 344px;
+  opacity: 1;
+}
 
+.person:hover img {
+  height: 230px;
+  width: 230px;
+  transition: 1s;
+  border-radius: 60px;
+}
+
+// @media only screen and (max-width: 750px) {
+//   .people {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
