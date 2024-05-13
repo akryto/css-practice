@@ -2,7 +2,7 @@
 @import 'blocks/variables';
 body {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
@@ -10,27 +10,33 @@ body {
 }
 
 .people {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-content: space-between;
+  margin: 30px;
 }
 
 .person {
-
   width: 200px;
   height: 231px;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   color: #2F4F4F;
-
 }
 img {
   display: flex;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.sport {
+  opacity: 0;
+}
+
+.pay {
+  opacity: 0;
 }
 
 
