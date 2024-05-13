@@ -1,6 +1,7 @@
 @import 'blocks/reset';
 @import 'blocks/variables';
 body {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,7 @@ body {
   text-align: center;
   color: #2F4F4F;
   justify-content: center;
+  transition: 1s;
   position: relative;
 }
 img {
@@ -31,20 +33,21 @@ img {
   height: 200px;
   border-radius: 50%;
   transition: 1s;
+  margin: 12px;
 }
 
-.rank {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  background-color: #fff;
-  color: #8B0000;
-  font-size: 16px;
-  line-height: 18px;
- }
+// .rank {
+//   position: absolute;
+//   top: 50%;
+//   right: 0;
+//   border-radius: 50%;
+//   width: 32px;
+//   height: 32px;
+//   background-color: #fff;
+//   color: #8B0000;
+//   font-size: 16px;
+//   line-height: 18px;
+//  }
 
 .sport {
   opacity: 0;
@@ -61,16 +64,22 @@ img {
   border-radius: 12px;
   width: 264px;
   height: 344px;
-  opacity: 1;
+  transition: 1s;
 }
 
 .person:hover img {
-  height: 230px;
-  width: 230px;
+  height: 240px;
+  width: 240px;
   transition: 1s;
   border-radius: 60px;
 }
+.person:hover .sport {
+  opacity: 1;
+}
 
+.person:hover .pay{
+  opacity: 1;
+}
 // @media only screen and (max-width: 750px) {
 //   .people {
 //     display: grid;
